@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/ico" href="../imatges/logo-cifp.ico"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/borsa.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <title>Borsa de treball: Alta cicle</title>
+    <meta charset="utf-8">
+    <script type="module" src="js/alta.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <a href="../sortirLogo"><img src="../imatges/logo-cifp.svg" height="75" width="55" class="pull-left"></a>
+        <h2><a href="../sortir">Borsa de treball</a> <small><a href="../sortirLogo">CIFP Pau Casesnoves</a></small></h2>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">CIFP Pau Casesnoves</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" id="barra">
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a href="../sortir"><span class="glyphicon glyphicon-log-out"></span> Sortir</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Alta de cicle</h2>
+    <div class="well" id="dCicle">
+        <form id="fCicle">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group required">
+                        <label class='control-label' for="id">Codi:</label>
+                        <input type="text" required="required" class="form-control " id="id" name="id">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group required">
+                        <label class='control-label' for="nom">Nom:</label>
+                        <input type="text" required="required" class="form-control " id="nom" name="nom">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="form-group required">
+                        <label class='control-label' for="actiu">Actiu:</label>
+                        <input type="checkbox"  class="form-control " id="actiu" name="actiu">
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12">
+                    <div class="form-group required">
+                        <label class="control-label" for="familia">Família professional:</label>
+                        <select class="form-control" id="familia" name="familia" required>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12">
+                    <div class="form-group required required">
+                        <label class="control-label" for="familia">Tipus d'estudis:</label>
+                        <select class="form-control" id="tipusEstudis" name="tipusEstudis">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button id="bSubmit" type="submit" class="btn btn-primary">D'acord</button>
+                        <button id="bReset" class="btn btn-default" type="reset">Cancel·lar</button>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12">
+                    <p>Tots els camps són obligatoris</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="well">&copy; Centre Integrat de Formació Professional Pau Casesnoves <span
+            class="pull-right">Telèfon: <a href="tel:971881710">971 881 710</a> Correu electrònic: <a
+            href="mailto:orientacio@paucasesnovescifp.cat">orientacio@paucasesnovescifp.cat</a></span></div>
+</div><!--Contenidor -->
+<script type="module">
+    import generaMenu from "../js/menu.js";
+
+    generaMenu(2, '');
+</script>
+</body>
+</html>
